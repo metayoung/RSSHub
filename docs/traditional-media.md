@@ -469,9 +469,21 @@ Provides all of the articles by the specified Yahoo! author.
 
 ## 北极星电力网
 
-### 北极星环保
+### 环保要闻
 
-<Route author="zsimple"  example="/bjx/huanbao" path="/bjx/huanbao" />
+<Route author="zsimple" example="/bjx/huanbao" path="/bjx/huanbao" radar="1" rssbud="1"/>
+
+### 光伏
+
+<Route author="Sxuet" example="/bjx/gf/sc" path="/bjx/gf/:type" :paramsDesc="['分类，北极星光伏最后的`type`字段']" radar="1" rssbud="1"/>
+
+`:type` 类型可选如下
+
+| 要闻 | 政策 | 市场行情 | 企业动态 | 独家观点 | 项目工程 | 招标采购 | 财经 | 国际行情 | 价格趋势 | 技术跟踪 |
+| -- | -- | ---- | ---- | ---- | ---- | ---- | -- | ---- | ---- | ---- |
+| yw | zc | sc   | mq   | dj   | xm   | zb   | cj | gj   | sj   | js   |
+
+</Route>
 
 ## 财新网
 
@@ -759,22 +771,6 @@ Type 栏目：
 :::
 
 </Route>
-
-## 多维新闻网
-
-### 要闻
-
-<Route author="HenryQW" example="/dwnews/yaowen/global" path="/dwnews/yaowen/:region?" :paramsDesc="['要闻地区，默认`全部`，可选地区如下']">
-
-| 全部     | 国际     | 中国    | 香港       | 台湾     | 经济     | 视觉     |
-| ------ | ------ | ----- | -------- | ------ | ------ | ------ |
-| yaowen | global | china | hongkong | taiwan | jingji | shijue |
-
-</Route>
-
-### 24 小时新闻排行榜
-
-<Route author="HenryQW" example="/dwnews/rank" path="/dwnews/rank"/>
 
 ## 俄罗斯卫星通讯社
 
